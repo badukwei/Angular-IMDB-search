@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+
+    thead {
+      background-color: #DCDCDC;
+    }
+
+    tbody {
+      background-color: #F5F5F5;
+
+      tr {
+        border-bottom: 1px solid #DCDCDC;
+      }
+    }
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+}
+
+
