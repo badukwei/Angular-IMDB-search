@@ -1,19 +1,26 @@
 <div class="container">
-  <table >
+  <table>
     <thead>
       <tr>
-        <th>heading 1</th>
-        <th>heading 2</th>
-        <th>heading 3</th>
-        <th>heading 4</th>
+        <th></th>
+        <th>Rank</th>
+        <th>Movie Name</th>
+        <th>Actors</th>
       </tr>
     </thead>
-    <tbody *ngFor="let item of navbarService.searchData$.value">
+    <tbody *ngFor="let movie of navbarService.searchData$.value">
       <tr>
-        <td>{{item.id}}</td>
-        <td>{{item.id}}</td>
-        <td>{{item.id}}</td>
-        <td>{{item.id}}</td>
+        <td>
+          <img
+            [src] = "movie.i.imageUrl"
+            width="100px"
+            height="100px"
+            [alt] = "movie.l"
+          />
+        </td>
+        <td>{{movie.rank}}</td>
+        <td>{{movie.l}}</td>
+        <td>{{movie.s}}</td>
       </tr>
     </tbody>
   </table>
