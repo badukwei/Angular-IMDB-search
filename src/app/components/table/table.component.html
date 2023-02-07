@@ -8,7 +8,7 @@
         <th>Actors</th>
       </tr>
     </thead>
-    <tbody *ngFor="let movie of navbarService.searchData$.value">
+    <tbody *ngFor="let movie of navbarService.searchData$.value | orderBy : 'rank' : 'asc' ">
       <tr>
         <td>
           <img

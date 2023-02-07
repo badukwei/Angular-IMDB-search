@@ -1,3 +1,4 @@
+import { PipesModule } from './pipe/pipes.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
@@ -18,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
+    PipesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
